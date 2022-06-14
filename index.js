@@ -156,5 +156,4 @@ async function best_movie(url){
     document
         .getElementById("#best_movie_btn")
         .setAttribute("href", "https://www.imdb.com/title/tt" + movie_info.id + "/")
-        
 }

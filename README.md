@@ -2,7 +2,7 @@ Projet 6 - Formation OpenClassRooms Python
 
 Réalisation d'une page html/Css/Javascript d'un site de Video Streaming type NETFLIX.
 
-A l'aide d'une API DJANGO, nous devons récuperer des informations et les afficher sur la page.
+A l'aide d'une API REST avec DJANGO, nous devons récuperer des informations et les afficher sur la page.
 
 Plusieurs filtres sont appliqués pour afficher les films selon :
 <ul>
