@@ -293,6 +293,7 @@ header li{
 
 #best_movie_img{
     width: 30%;
+    cursor: pointer;
 
 }
 

@@ -131,7 +131,10 @@ async function best_movie(url){
     console.log(movie_info);
     document
         .getElementById("best_movie_img")
-        .setAttribute("src", movie_info.image_url);
+        .setAttribute("src", movie_info.image_url)
+    document
+        .getElementById("best_movie_img")
+        .setAttribute("onclick", "showModal(" + movie_info.id + ")");
     document
         .getElementById("best_movie_title")
         .innerText = movie_info.title;
