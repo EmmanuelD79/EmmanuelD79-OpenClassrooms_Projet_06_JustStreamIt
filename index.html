@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>JustStreamIt</title>
+</head>
+<body>
+    <header>
+        <h1>JustStreamIt</h1>
+        <ul>
+            <li>Accueil</li>
+            <li>Categories</li>
+        </ul>
+    </header>
+
+        <!-- The Modal -->
+    <div id="modal" class="modal">
+        <div class="modal__content">
+            <span class="modal__close">&times;</span>
+            <img id="movie_image" src="">
+            <div>
+                <h1 id="movie_title"></h1>
+                <a class="btn" role="button" href="#" target="_blank">Accés à Imdb</a>
+                <div>
+                    <p id="movie_countrie"></p>
+                    <p id="movie_year"></p>
+                    <p id="movie_score"></p>
+                </div>
+            </div>
+            <div id="movie_description_box">
+                <p id="movie_description" ></p>
+            </div>
+            <p id="movie_genre"></p>
+            <p id="movie_directors"></p>
+            <p id="movie_actors"></p>
+            <p id="movie_duration"></p>
+        </div>
+    </div>
+
+
+    <div id="best">
+        <div class="best_movie__content">
+            <img id="best_movie_img" src="" alt="">
+            <div class="best_movie_info">
+                <h1 id="best_movie_title"></h1>
+                <ul>
+                    <li id="best_movie_year"></li>
+                    <li id="best_movie_genre"></li>
+                    <li id="best_movie_score"></li>
+                 </ul>
+                <p id="best_movie_description"></p>
+                <a id="best_movie_btn" class="btn" role="button" href="#" target="_blank">Accés à Imdb</a>
+            </div>
+        </div>
+    </div>
+    <div id="main">
+        <div id="best_movie">
+            <h2>Les meilleurs films du moment</h2>
+        </div>
+
+        <div id="drama">     
+            <h2>Dramatique</h2>
+        </div>
+
+        <div id="horror">
+            <h2>Horreur</h2>
+        </div>
+
+        <div id="action">  
+            <h2>Action</h2> 
+        </div>
+
+        <div id="biography">
+            <h2>Biographie</h2>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
