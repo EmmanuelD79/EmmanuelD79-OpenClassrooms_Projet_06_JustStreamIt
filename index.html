@@ -6,16 +6,42 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/main.css">
     <link rel="stylesheet" href="/css/modal.css">
+    <script src="./src/index.js"></script>
     <title>JustStreamIt</title>
 </head>
+<!--modal-->
+<div id="modal__container" class="modal__container">
+    <div class="overlay modal-trigger"></div>
+    <div class="modal">
+      <div class="modal__content">
+        <button class="modal__button modal-trigger">X</button>
+        <div class="main">
+            <div class="main__cover"><img id="cover" src="" alt="affiche du film"></div>
+            <div class="info">
+                <h1 id="title"></h1>
+                <P id="genre"></p>
+                <p id="date"></p>
+                <p id="score"></p>
+                <p id="rated"></p>
+                <p id="country"></p>
+                <p id="duration"></p>
+            </div>
+        </div>
+        <div class="secondary">
+          <p id="description"></p>
+          <p id="directors"></p>
+          <p id="actors"></p>
+          <p id="result"></p>
+        </div>
+      </div>
+    </div>
+  </div>
+<!-- end modal-->
 <body>
     <header>
         <div class="header__container">
             <div class="header__container__logo">
-                <img
-                    loading="lazy"
-                    src="/img/white_logo.png"
-                />
+                <img src="/img/white_logo.png" alt="">
             </div>
             <div class="header__container__navbar">
                 <ul>
@@ -29,36 +55,11 @@
             </div>
         </div>
     </header>
-    <!--modal-->
-    <div id="modal" class="modal">
-        <div class="modal__close">&times;</div>
-        <div class="modal__content">
-          <div class="modal__main">
-            <div id="modal__main__cover"><img id="cover" src="" alt=""></div>
-            <div id="modal__main_info">
-                  <h1 id="title"></h1>
-                  <P id="genre"></p>
-                  <p id="date"></p>
-                  <p id="score"></p>
-                  <p id="rated"></p>
-                  <p id="country"></p>
-                  <p id="duration"></p>
-            </div>
-          </div>
-          <div class="modal__secondary_info">
-            <p id="description"></p>
-            <p id="directors"></p>
-            <p id="actors"></p>
-            <p id="result"></p>
-          </div>
-        </div>
-      </div>
-    <!-- end modal-->
     <div id="best">
-        <div class="best__container__cover"><img id="best_movie_img" src="" alt=""></img></div>
+        <div class="best__container__cover"><img id="best_movie_img" alt=""></div>
         <div class="best__container_info">
             <div class="best__container_info__text">
-                <h1 id="best_movie_title"></h1>
+                <p id="best_movie_title"></p>
                 <p id="best_movie_description"></p>
             </div>
             <div class="best__container_info__btn">Play</div>
@@ -72,7 +73,7 @@
                 <div class="slide__container__prev">
                     <img src="img/prev.png" alt="">
                 </div>
-                <div id="best_movies_cover"class ="slide__container__cover">
+                <div id="best_movies_cover" class ="slide__container__cover">
                 </div>
                 <div class="slide__container__next">
                     <img src="img/next.png" alt="">
@@ -119,6 +120,5 @@
             </div>
         </div>
     </div>
-    <script src="index.js"></script>
 </body>
 </html>

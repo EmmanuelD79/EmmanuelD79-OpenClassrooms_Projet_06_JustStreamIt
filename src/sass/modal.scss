@@ -1,0 +1,134 @@
+$font-color : rgb(235, 237, 226);
+$bg-color :  rgba(168, 201, 239, 1);
+$breakpoints: (mobile: 599px, pad: 750px);
+
+@mixin mobile-only {
+  @media screen and (max-width: map-get($breakpoints, mobile)){
+    @content;
+  }
+}
+
+.modal{
+
+  &__container{
+    z-index: 2;
+    position: fixed;
+    visibility: hidden;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    transition: visibility 0.4s;
+    overflow: scroll;
+
+    h1{
+      font-size: 2rem;
+    }
+
+    p{
+      font-size: 1rem;
+    }
+
+
+    &.active{
+      visibility: visible;
+      .overlay{
+        opacity: 1;
+        transition: opacity 0.4s ease-out;
+      }
+    }
+  }
+
+  &__button{
+    padding: 8px 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    background: #ff365e;
+    color: #fff;
+  }
+  &__content{
+    width: 95%;
+    max-width: 500px;
+    min-width: 200px;
+    padding: 30px;
+    background: $bg-color ;
+    border-radius: 5px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    color: $font-color;
+
+    @include mobile-only{
+
+      width:80%;
+      margin-top:10px;
+      margin-right: 5px;
+      margin-left: 5px;
+      margin-bottom: 10px;
+      .main{
+        flex-flow: column wrap;
+
+
+        &__cover, img{
+          display: none;
+        }
+      }
+
+    }
+    
+    .main{
+      display: flex;
+      flex-basis: 100%;
+      flex-direction: row;
+      margin-bottom: 5px;
+    
+      &__cover{
+        width: 100%;
+        margin-right: 5px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        img {
+          box-shadow: 10px 5px 5px invert($font-color);
+        }
+      }
+    
+      .info{
+        width: 100%;
+        margin-left: 5px;
+
+      }
+    }
+
+    .secondary{
+      margin-top: 5px;
+      border: 2px solid $font-color ;
+      padding: 5px;
+      box-shadow: 10px 5px 5px invert($font-color);
+    }
+
+  }
+
+
+
+}
+
+.overlay{
+  opacity: 0;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #333333d3;
+  transition: opacity 0.4s 0.2s ease-out;
+}
+
