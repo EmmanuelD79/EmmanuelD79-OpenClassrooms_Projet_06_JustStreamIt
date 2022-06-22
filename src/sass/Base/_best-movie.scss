@@ -1,0 +1,54 @@
+#best{
+    border-radius: 20px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    background-color:$secondary_color;
+    flex-basis: 100%;
+    margin-top: 20px;
+    padding-right: 50px;
+    padding-left: 50px;
+  
+    @include pad{
+      margin-top: 0px;
+    }
+  
+    @include mobile-only{
+      flex-flow: column ;
+      align-items: center;
+    }
+
+}
+  
+.best-container{
+    &__cover{
+        display: flex;
+        margin: 20px 20px 20px 20px;
+        order: 2;
+    }
+  
+    &_info{
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: center;
+        justify-content: center;
+        order: 1;
+    }
+  
+    &__text{
+          display: flex;
+  
+          flex-flow: column nowrap;
+          color: $font_color;
+        &--title{
+            font-size: 2rem;
+          }
+  
+        p{
+            text-align: center;
+          }        
+    }   
+
+}
+
+  

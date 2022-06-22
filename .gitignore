@@ -8,3 +8,8 @@
 webpack.config.js
 package.json
 package-lock.json
+.DS_Store
+.eslintrc.js
+.vscode/
+babel.config.json
+src/.DS_Store

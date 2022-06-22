@@ -4,9 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/css/main.css">
-    <link rel="stylesheet" href="/css/modal.css">
-    <script src="./src/js/index.js"></script>
+    <link rel="stylesheet" href="dist/css/main.min.css">
     <title>JustStreamIt</title>
 </head>
 <!--modal-->
@@ -14,24 +12,24 @@
     <div class="overlay modal-trigger"></div>
     <div class="modal">
       <div class="modal__content">
-        <button class="modal__button modal-trigger">X</button>
+        <button class="modal__button modal-trigger close-button">X</button>
         <div class="main">
-            <div class="main__cover"><img id="cover" src="" alt="affiche du film"></div>
+            <div class="main__cover"><img id="modal_cover" src="" alt="affiche du film"></div>
             <div class="info">
-                <h1 id="title"></h1>
-                <P id="genre"></p>
-                <p id="date"></p>
-                <p id="score"></p>
-                <p id="rated"></p>
-                <p id="country"></p>
-                <p id="duration"></p>
+                <h1 id="modal_title"></h1>
+                <P id="modal_genre"></p>
+                <p id="modal_date"></p>
+                <p id="modal_score"></p>
+                <p id="modal_rated"></p>
+                <p id="modal_country"></p>
+                <p id="modal_duration"></p>
             </div>
         </div>
         <div class="secondary">
-          <p id="description"></p>
-          <p id="directors"></p>
-          <p id="actors"></p>
-          <p id="result"></p>
+          <p id="modal_description"></p>
+          <p id="modal_directors"></p>
+          <p id="modal_actors"></p>
+          <p id="modal_result"></p>
         </div>
       </div>
     </div>
@@ -40,10 +38,10 @@
 <body>
     <header>
         <div class="header__container">
-            <div class="header__container__logo">
+            <div class="header__logo">
                 <img src="/img/white_logo.png" alt="">
             </div>
-            <div class="header__container__navbar">
+            <div class="header__navbar">
                 <ul>
                     <li>
                         Acceuil
@@ -56,13 +54,13 @@
         </div>
     </header>
     <div id="best">
-        <div class="best__container__cover"><img id="best_movie_img" alt=""></div>
-        <div class="best__container_info">
-            <div class="best__container_info__text">
-                <p id="best_movie_title"></p>
-                <p id="best_movie_description"></p>
+        <div class="best-container__cover"><img id="best-img" alt=""></div>
+        <div class="best-container_info">
+            <div class="best-container__text">
+                <p id="best-title" class="best-container__text--title"></p>
+                <p id="best-description"></p>
             </div>
-            <div class="best__container_info__btn">Play</div>
+            <div class="play-button">Play</div>
         </div>
 
     </div>
@@ -70,12 +68,12 @@
         <div id="slide_best_movies" class="slide">
             <div class="slide__title"> <h1>Films les mieux notés</h1></div>
             <div id="best_movies" class="slide__container">
-                <div class="slide__container__prev">
+                <div class="prev">
                     <img src="img/prev.png" alt="">
                 </div>
-                <div id="best_movies_cover" class ="slide__container__cover">
+                <div id="best_movies_covers" class ="covers">
                 </div>
-                <div class="slide__container__next">
+                <div class="next">
                     <img src="img/next.png" alt="">
                 </div>
             </div>
@@ -83,12 +81,12 @@
         <div id="slide_drama_movies"  class="slide">
             <div class="slide__title"> <h1>Drame</h1></div>
             <div id="drama" class="slide__container">
-                <div class="slide__container__prev">
+                <div class="prev">
                     <img src="img/prev.png" alt="">
                 </div>
-                <div id="drama_cover" class ="slide__container__cover">
+                <div id="drama_covers" class ="covers">
                 </div>
-                <div class="slide__container__next">
+                <div class="next">
                     <img src="img/next.png" alt="">
                 </div>
             </div>
@@ -96,12 +94,12 @@
         <div id="slide_horror_movies" class="slide">
             <div class="slide__title"> <h1>Horreur</h1></div>
             <div id="horror" class="slide__container">
-                <div class="slide__container__prev">
+                <div class="prev">
                     <img src="img/prev.png" alt="">
                 </div>
-                <div id="horror_cover" class ="slide__container__cover">
+                <div id="horror_covers" class ="covers">
                 </div>
-                <div class="slide__container__next">
+                <div class="next">
                     <img src="img/next.png" alt="">
                 </div>
             </div>
@@ -109,16 +107,18 @@
         <div id="slide_action_movies" class="slide">
             <div class="slide__title"> <h1>Action</h1></div>
             <div id="action" class="slide__container">
-                <div class="slide__container__prev">
+                <div class="prev">
                     <img src="img/prev.png" alt="">
                 </div>
-                <div id="action_cover" class ="slide__container__cover">
+                <div id="action_covers" class ="covers">
                 </div>
-                <div class="slide__container__next">
+                <div class="next">
                     <img src="img/next.png" alt="">
                 </div>
             </div>
         </div>
     </div>
+    <script src="dist/js/app.bundle.js"></script>
+    <script src="dist/js/polyfill.bundle.js"></script>
 </body>
 </html>

@@ -1,0 +1,27 @@
+// Main Mixins //
+
+@mixin mobile-only {
+    @media screen and (max-width: map-get($breakpoints, mobile)){
+      @content;
+    }
+  }
+
+@mixin pad {
+    @media screen and (max-width: map-get($breakpoints, pad)){
+      @content;
+    }
+  }
+
+@mixin nav{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-basis: 10%;
+  cursor: pointer;
+
+  @extend %mobile_nav_img;
+  &:hover{
+    background: rgba(20, 20, 20, 0.26);
+    }
+}
+

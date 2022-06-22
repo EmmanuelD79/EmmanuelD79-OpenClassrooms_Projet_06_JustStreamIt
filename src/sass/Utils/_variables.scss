@@ -1,0 +1,12 @@
+// Main Variables //
+
+$primary_color : rgba(98, 117, 127, 1);
+$font_color: rgb(235, 237, 226);
+$font: Arial Narrow, sans-serif;
+$secondary_color: rgba(168, 201, 239, 1);
+$breakpoints: (mobile: 599px, pad: 750px);
+
+// Modal Variables //
+
+$modal_text-color : $font_color;
+$modal-bg : $secondary_color;

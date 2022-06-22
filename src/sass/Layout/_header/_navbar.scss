@@ -1,0 +1,29 @@
+&__navbar {
+    display: flex;
+    flex-direction: row;
+    flex-basis: 100%;
+    align-items: flex-end;
+    justify-content: flex-end;
+
+    ul{
+      display: flex;
+      list-style: none;
+      align-items: flex-end;
+
+      li{
+        font-size: 2rem;
+        color: $font_color;
+        margin-right: 50px;
+
+        @include pad{
+          font-size: 1.5rem;
+        }
+
+        &:hover{
+          border:2px solid $secondary_color;
+          border-radius: 10px;
+
+        }
+      }
+    }
+  }

@@ -1,0 +1,75 @@
+.slide{
+    margin-top: 50px;
+    padding-bottom: 20px;
+    display: flex;
+    flex-flow: column;
+    flex-basis: 100%;
+    align-items: stretch;
+  
+    &__title{
+      display: flex;
+      flex-basis: 100%;
+      justify-content: center;
+      
+      h1{
+        font-size: 2rem;
+        color: $font_color;
+      }
+  
+      @include mobile-only{
+        h1{
+          font-size: 1.5rem;
+        }
+        
+      }
+    }
+    
+    &__container{
+        display: flex;
+        flex-direction: row;
+        flex-basis: 100%;
+
+        .prev{
+            @include nav;
+            order: 1;
+    
+    
+        }
+        .next{
+            @include nav;
+            order: 3;
+        }
+    
+        .covers{
+            display: flex;
+            flex-basis: 80%;
+            order: 2;
+            overflow: hidden;
+    
+            .cards{
+                display: flex;
+                
+                img{
+                  border: 2px solid $secondary_color;
+                  margin-right: 3px;
+                  &:hover{
+                    transform: scale(1.1);
+                    z-index: 1;
+                  }
+                }
+              }
+    
+    
+    
+        }
+
+        
+    }
+  
+
+
+  
+ }
+
+
+      

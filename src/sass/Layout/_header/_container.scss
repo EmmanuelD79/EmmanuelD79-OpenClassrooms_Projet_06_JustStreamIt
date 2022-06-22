@@ -1,0 +1,14 @@
+&__container {
+  
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    flex-basis: 100%;
+    margin-bottom: 30px;
+
+    @include pad{
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 5px;
+    }
+}

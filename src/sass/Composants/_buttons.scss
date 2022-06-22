@@ -1,0 +1,30 @@
+.close-button{
+    padding: 8px 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    position: absolute;
+    cursor: pointer;
+    background: #ff365e;
+    color: #fff;
+}
+
+.play-button{
+    display: flex;
+    flex-direction: row;
+    width: 178px;
+    justify-content: center;
+    margin-top: 50px;
+    border-radius: 5px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: rgba(222, 64, 64, 1);
+    color:$font_color;
+    font-size: 1rem;
+    letter-spacing: 0%;
+    text-align: center;
+    cursor: pointer;
+    &:hover{
+      background-color:$primary_color ;
+    }
+}

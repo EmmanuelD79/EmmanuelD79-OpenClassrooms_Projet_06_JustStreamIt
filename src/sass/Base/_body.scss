@@ -1,0 +1,25 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: stretch;
+    padding-top: 20px;
+    padding-bottom: 100px;
+    padding-right: 80px;
+    padding-left: 80px;
+    background-color: $primary_color;
+    font-family: $font;
+
+    @include mobile-only{
+      justify-content: flex-start;
+      padding: 0px 0px 0px 0px;
+      max-width: map-get($breakpoints, mobile);
+    }
+
+    @include pad{
+      padding-bottom: 30px;
+      padding-left: 5px;
+      padding-right: 5px;
+    }
+
+  }

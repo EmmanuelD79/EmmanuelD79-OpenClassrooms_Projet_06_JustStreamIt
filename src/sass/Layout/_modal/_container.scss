@@ -1,0 +1,28 @@
+&__container{
+    z-index: 2;
+    position: fixed;
+    visibility: hidden;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    transition: visibility 0.4s;
+    overflow: scroll;
+
+    h1{
+      font-size: 2rem;
+    }
+
+    p{
+      font-size: 1rem;
+    }
+
+    &.active{
+      visibility: visible;
+
+      .overlay{
+        opacity: 1;
+        transition: opacity 0.4s ease-out;
+      }
+    }
+}

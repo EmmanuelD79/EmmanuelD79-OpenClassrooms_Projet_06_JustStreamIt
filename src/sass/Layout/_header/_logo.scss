@@ -1,0 +1,12 @@
+&__logo {
+    display: flex;
+    flex-basis: 321px;
+
+    @include pad{
+        flex-basis: 100px;
+
+        img{
+            height:150px;
+        }
+    }
+}

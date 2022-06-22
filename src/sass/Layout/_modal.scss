@@ -1,0 +1,16 @@
+.modal{
+
+    @import "./_modal/container";
+    @import "./_modal/content";
+    @import "./_modal/button";
+
+  }
+  
+  .overlay{
+    opacity: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #333333d3;
+    transition: opacity 0.4s 0.2s ease-out;
+  }

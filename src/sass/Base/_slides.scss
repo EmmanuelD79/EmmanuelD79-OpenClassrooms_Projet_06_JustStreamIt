@@ -1,0 +1,15 @@
+#slide{
+    &_best_movies{
+      order: 1;
+    }
+    &_drama_movies{
+      order: 2;
+    }
+    &_horror_movies{
+      order: 3;
+    }
+    &_action_movies{
+      order: 4;
+    }
+  
+}
