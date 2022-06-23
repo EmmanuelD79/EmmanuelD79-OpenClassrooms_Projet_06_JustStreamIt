@@ -12,11 +12,11 @@ Plusieurs filtres sont appliqués pour afficher les films selon :
 
 l'API est accessible à l'adresse https://github.com/OpenClassrooms-Student-Center/OCMovies-API-EN-FR.git
 
-Vous devez au préalable installer l'API en local en suivant les instructions d'installer disponible sur sa documentation.
+Vous devez au préalable installer l'API en local en suivant les instructions d'installation disponible sur sa documentation.
 
 Dés que l'API est installée, vous pouvez accéder un site en :
 
-cloner le projet à l'aide de votre terminal en tapant la commande :
+clonant le projet à l'aide de votre terminal en tapant la commande :
 <br> 
 
 ```
@@ -26,7 +26,7 @@ git clone https://github.com/EmmanuelD79/OpenClassrooms_Projet_06_JustStreamIt.g
 ```
 
 
-Pour démarrer le projet, vous devez aller dans le répertoire du projet et lancer sur votre navigateur le fichier:
+Pour l'execution , vous devez aller dans le répertoire du projet et lancer sur votre navigateur le fichier:
 	<br> 
 ```
 	
