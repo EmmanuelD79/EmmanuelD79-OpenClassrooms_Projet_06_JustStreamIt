@@ -7,35 +7,35 @@
     <link rel="stylesheet" href="dist/css/main.min.css">
     <title>JustStreamIt</title>
 </head>
-<!--modal-->
-<div id="modal__container" class="modal__container">
-    <div class="overlay modal-trigger"></div>
-    <div class="modal">
-      <div class="modal__content">
-        <button class="modal__button modal-trigger close-button">X</button>
-        <div class="main">
-            <div class="main__cover"><img id="modal_cover" src="" alt="affiche du film"></div>
-            <div class="info">
-                <h1 id="modal_title"></h1>
-                <P id="modal_genre"></p>
-                <p id="modal_date"></p>
-                <p id="modal_score"></p>
-                <p id="modal_rated"></p>
-                <p id="modal_country"></p>
-                <p id="modal_duration"></p>
+<body>
+    <!--modal-->    
+    <div id="modal__container" class="modal__container">
+        <div class="overlay modal-trigger"></div>
+        <div class="modal">
+        <div class="modal__content">
+            <button class="modal__button modal-trigger close-button">X</button>
+            <div class="main">
+                <div  id="modal_cover" class="main__cover"></div>
+                <div class="info">
+                    <p id="modal_title"></p>
+                    <P id="modal_genre"></p>
+                    <p id="modal_date"></p>
+                    <p id="modal_score"></p>
+                    <p id="modal_rated"></p>
+                    <p id="modal_country"></p>
+                    <p id="modal_duration"></p>
+                </div>
+            </div>
+            <div class="secondary">
+            <p id="modal_description"></p>
+            <p id="modal_directors"></p>
+            <p id="modal_actors"></p>
+            <p id="modal_result"></p>
             </div>
         </div>
-        <div class="secondary">
-          <p id="modal_description"></p>
-          <p id="modal_directors"></p>
-          <p id="modal_actors"></p>
-          <p id="modal_result"></p>
         </div>
-      </div>
     </div>
-  </div>
-<!-- end modal-->
-<body>
+    <!-- end modal-->
     <header>
         <div class="header__container">
             <div class="header__logo">
@@ -54,7 +54,7 @@
         </div>
     </header>
     <div id="best">
-        <div class="best-container__cover"><img id="best-img" alt=""></div>
+        <div id="best-img" class="best-container__cover"></div>
         <div class="best-container_info">
             <div class="best-container__text">
                 <p id="best-title" class="best-container__text--title"></p>

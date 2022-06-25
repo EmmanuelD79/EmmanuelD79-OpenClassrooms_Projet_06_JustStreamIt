@@ -169,7 +169,7 @@ body {
   transition: visibility 0.4s;
   overflow: scroll;
 }
-.modal__container h1 {
+.modal__container #modal_title {
   font-size: 2rem;
 }
 .modal__container p {
