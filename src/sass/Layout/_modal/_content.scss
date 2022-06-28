@@ -32,7 +32,7 @@
 
     }
     
-    .main{
+    .modal-main{
       display: flex;
       flex-basis: 100%;
       flex-direction: row;
@@ -56,7 +56,7 @@
       }
     }
 
-    .secondary{
+    .modal-secondary{
       margin-top: 5px;
       border: 2px solid $modal_text-color ;
       padding: 5px;

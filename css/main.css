@@ -223,7 +223,7 @@ body {
     display: none;
   }
 }
-.modal__content .main {
+.modal__content .modal-main {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -235,7 +235,7 @@ body {
           flex-direction: row;
   margin-bottom: 5px;
 }
-.modal__content .main__cover {
+.modal__content .modal-main__cover {
   width: 100%;
   margin-right: 5px;
   display: -webkit-box;
@@ -248,15 +248,15 @@ body {
       -ms-flex-pack: center;
           justify-content: center;
 }
-.modal__content .main__cover img {
+.modal__content .modal-main__cover img {
   -webkit-box-shadow: 10px 5px 5px #14121d;
           box-shadow: 10px 5px 5px #14121d;
 }
-.modal__content .main .info {
+.modal__content .modal-main .info {
   width: 100%;
   margin-left: 5px;
 }
-.modal__content .secondary {
+.modal__content .modal-secondary {
   margin-top: 5px;
   border: 2px solid rgb(235, 237, 226);
   padding: 5px;
