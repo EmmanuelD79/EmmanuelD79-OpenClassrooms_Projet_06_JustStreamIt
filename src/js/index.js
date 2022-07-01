@@ -9,7 +9,7 @@ const ALL_MOVIES_URL = API_URL + 'api/v1/titles/';
 /**
  * @param {string} url url of API.
  */
-async function getData (url) {
+async function getData(url) {
 	try {
 		let response = await fetch(url);
 		let json = await response.json();
@@ -23,7 +23,7 @@ async function getData (url) {
  * @param {json} data result of API's response.
  * @param {string} nameCategorie name of movies category searched.
  */
-async function getMovies (data, nameCategorie) {
+async function getMovies(data, nameCategorie) {
 	let slide = document.getElementById(nameCategorie);
 	let prev = slide.getElementsByClassName('prev');
 	let next = slide.getElementsByClassName('next');
@@ -53,7 +53,7 @@ async function getMovies (data, nameCategorie) {
 /**
  * @param {json} data result of API's response.
  */
-async function getBestMovie (data) {
+async function getBestMovie(data) {
 	let movieInfo = await getData(ALL_MOVIES_URL + data.results[0].id);
 	let bestImgContainer = document.getElementById('best-img');
 	let bestImg = document.createElement('img');
@@ -73,7 +73,7 @@ async function getBestMovie (data) {
 /**
  * @param {number} id the movie's id to search.
  */
-async function getModalInfo (id) {
+async function getModalInfo(id) {
 	let data = await getData(ALL_MOVIES_URL + id);
 	let ModalCover = document.getElementById('modal_cover');
 	ModalCover.style.backgroundImage = "url(" + data.image_url + ")";
@@ -124,7 +124,7 @@ async function getModalInfo (id) {
 		.innerHTML = '<span><b>Description: </b></span>' + data.long_description;
 }
 
-async function loadMovies () {
+async function loadMovies() {
 
 	try {
 		let bestMovies = await getData(BEST_MOVIES_URL);
@@ -141,12 +141,12 @@ async function loadMovies () {
 /**
  * @param {number} id the movie's id to show on the modal.
  */
-async function showModal (id) {
+async function showModal(id) {
 	getModalInfo(id);
 	toggleModal();
 }
 
-async function toggleModal () {
+async function toggleModal() {
 	let ModalContainer = document.querySelector('.modal__container');
 	let ModalTrigger = document.querySelectorAll('.modal-trigger');
 
@@ -157,14 +157,14 @@ async function toggleModal () {
 /**
  * @param {objet} section the HTML node to move to right.
  */
-function goNext (section) {
+function goNext(section) {
 	document.getElementById(section).scrollLeft += 160;
 }
 
 /**
  * @param {objet} section the HTML node to move to left.
  */
-function goPrev (section) {
+function goPrev(section) {
 	document.getElementById(section).scrollLeft -= 160;
 }
 
